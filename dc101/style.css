@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #1a1a2e;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #2a2497;
+    border-radius: 20px;
+    padding: 30px 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+h1 {
+    color: #16213e;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.score-board p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.score-board span {
+    font-size: 32px;
+    font-weight: bold;
+    color: #16213e;
+}
+
+.separator {
+    font-size: 32px;
+    font-weight: bold;
+    color: #555;
+}
+
+.choices-area {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.choice {
+    width: 30%;
+    background-color: #e94560;
+    color: white;
+    border-radius: 12px;
+    padding: 15px 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.choice:active {
+    transform: scale(0.95);
+}
+
+.choice-icon {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+.choice p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.result-area {
+    background-color: #f1f1f1;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+#resultText {
+    font-size: 18px;
+    font-weight: bold;
+    color: #16213e;
+    margin-bottom: 20px;
+}
+
+.choices-display {
+    display: flex;
+    justify-content: space-around;
+}
+
+.choices-display p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+#playerChoice, #computerChoice {
+    font-size: 30px;
+}
+
+.reset-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #16213e;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.reset-btn:active {
+    background-color: #0f3460;
+}
